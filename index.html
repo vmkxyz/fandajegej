@@ -10,33 +10,37 @@
 			justify-content: center;
 			align-items: center;
 			height: 100vh;
-			background-color: #f0f0f0;
+			background-color: #121212;
 			font-family: Arial, sans-serif;
+			color: #ffffff;
 		}
 		#loginForm {
-			background-color: #fff;
+			background-color: #1e1e1e;
 			padding: 20px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 			border-radius: 5px;
+			width: 300px;
 		}
 		#loginForm input {
-			width: 100%;
+			width: calc(100% - 22px);
 			padding: 10px;
 			margin: 10px 0;
-			border: 1px solid #ccc;
+			border: 1px solid #333333;
 			border-radius: 3px;
+			background-color: #2c2c2c;
+			color: #ffffff;
 		}
 		#loginForm button {
 			width: 100%;
 			padding: 10px;
-			background-color: #28a745;
-			color: #fff;
+			background-color: #00695c;
+			color: #ffffff;
 			border: none;
 			border-radius: 3px;
 			cursor: pointer;
 		}
 		#loginForm button:hover {
-			background-color: #218838;
+			background-color: #004d40;
 		}
 	</style>
 </head>
@@ -49,7 +53,7 @@
 	<script>
 		function checkPassword() {
 			const password = document.getElementById('password').value;
-			const correctPassword = '12345';
+			const correctPassword = 'fC$%3H2gX@P7QX';
 			if (password === correctPassword) {
 				window.location.href = 'home.html';
 			} else {
