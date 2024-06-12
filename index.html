@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FANDA JE GEJ</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Fanda Je Gej</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<a href="./rozvracis.html">rozvracis me zevnitr</a>
-		<img src="frantik.jpg" alt="Fanda (Je Gej pictur)">
-    </main>
-	<script src="index.js"></script>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+		}
+		#loginForm {
+			background-color: #fff;
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			border-radius: 5px;
+		}
+		#loginForm input {
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+		#loginForm button {
+			width: 100%;
+			padding: 10px;
+			background-color: #28a745;
+			color: #fff;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		#loginForm button:hover {
+			background-color: #218838;
+		}
+	</style>
+</head>
+<body>
+	<div id="loginForm">
+		<h2>Login</h2>
+		<input type="password" id="password" placeholder="Enter Password">
+		<button onclick="checkPassword()">Login</button>
+	</div>
+	<script>
+		function checkPassword() {
+			const password = document.getElementById('password').value;
+			const correctPassword = '12345';
+			if (password === correctPassword) {
+				window.location.href = 'home.html';
+			} else {
+				alert('Incorrect password. Please try again.');
+			}
+		}
+	</script>
+</body>
 </html>
